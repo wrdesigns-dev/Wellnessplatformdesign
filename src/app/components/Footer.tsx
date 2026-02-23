@@ -1,5 +1,5 @@
 import { Heart } from 'lucide-react';
-import vitalPathLogo from '@/assets/VitalPath_Logo_Concept.png';
+import vitalPathLogo from '@/assets/vitalpath_logo_concept.png';
 
 export function Footer() {
   return (
