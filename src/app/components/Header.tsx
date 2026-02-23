@@ -48,18 +48,16 @@ export function Header({ onGetStarted, onLogoClick, onNavigate }: HeaderProps = 
             <div className="hidden sm:flex items-center justify-center">
               <img 
                 src={vitalPathLogo} 
-                alt="VitalPath Logo" 
-                style={{ filter: 'brightness(0) invert(1)', height: '40px' }}
-                className="w-auto object-contain"
+                alt="VitalPath" 
+                className="h-10 w-auto object-contain"
               />
             </div>
             {/* Logo Frame - Mobile */}
             <div className="flex sm:hidden items-center justify-center">
               <img 
                 src={vitalPathLogo} 
-                alt="VitalPath Logo" 
-                style={{ filter: 'brightness(0) invert(1)', height: '32px' }}
-                className="w-auto object-contain"
+                alt="VitalPath" 
+                className="h-8 w-auto object-contain"
               />
             </div>
           </button>
