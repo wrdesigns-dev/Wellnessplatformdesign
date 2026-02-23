@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import vitalPathLogo from './assets/vitalpath_logo_concept.png';
+import vitalPathLogo from '../../assets/vitalpath_logo_concept.png';
 
 interface HeaderProps {
   onGetStarted?: () => void;
