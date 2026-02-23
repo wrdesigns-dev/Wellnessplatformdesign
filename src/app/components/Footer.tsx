@@ -1,5 +1,5 @@
 import { Heart } from 'lucide-react';
-import vitalPathLogo from '../../assets/vitalpath_logo_concept.png';
+import vitalPathLogo from 'figma:asset/755a8d1f2da0a645866fa4c774c9a911a6c15934.png';
 
 export function Footer() {
   return (
@@ -11,8 +11,9 @@ export function Footer() {
             <div className="flex items-center mb-4">
               <img 
                 src={vitalPathLogo} 
-                alt="VitalPath" 
-                className="h-10 w-auto object-contain"
+                alt="VitalPath Logo" 
+                style={{ filter: 'brightness(0) invert(1)', height: '40px' }}
+                className="w-auto object-contain"
               />
             </div>
             <p 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import vitalPathLogo from '../../assets/vitalpath_logo_concept.png';
+import vitalPathLogo from 'figma:asset/755a8d1f2da0a645866fa4c774c9a911a6c15934.png';
 
 interface HeaderProps {
   onGetStarted?: () => void;
@@ -48,16 +48,18 @@ export function Header({ onGetStarted, onLogoClick, onNavigate }: HeaderProps = 
             <div className="hidden sm:flex items-center justify-center">
               <img 
                 src={vitalPathLogo} 
-                alt="VitalPath" 
-                className="h-10 w-auto object-contain"
+                alt="VitalPath Logo" 
+                style={{ filter: 'brightness(0) invert(1)', height: '40px' }}
+                className="w-auto object-contain"
               />
             </div>
             {/* Logo Frame - Mobile */}
             <div className="flex sm:hidden items-center justify-center">
               <img 
                 src={vitalPathLogo} 
-                alt="VitalPath" 
-                className="h-8 w-auto object-contain"
+                alt="VitalPath Logo" 
+                style={{ filter: 'brightness(0) invert(1)', height: '32px' }}
+                className="w-auto object-contain"
               />
             </div>
           </button>
