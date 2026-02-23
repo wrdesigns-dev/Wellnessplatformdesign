@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import vitalPathLogo from 'figma:asset/755a8d1f2da0a645866fa4c774c9a911a6c15934.png';
 
 interface HeaderProps {
   onGetStarted?: () => void;
@@ -41,22 +42,24 @@ export function Header({ onGetStarted, onLogoClick, onNavigate }: HeaderProps = 
           {/* Logo */}
           <button 
             onClick={onLogoClick}
-            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            className="flex items-center hover:opacity-80 transition-opacity mr-6"
           >
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#6B9B8E] to-[#4A7C6F] flex items-center justify-center">
-              <span 
-                className="text-white font-semibold text-lg"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
-              >
-                V
-              </span>
+            {/* Logo Frame - Desktop */}
+            <div className="hidden sm:flex items-center justify-center">
+              <img 
+                src={vitalPathLogo} 
+                alt="VitalPath" 
+                className="h-10 w-auto object-contain"
+              />
             </div>
-            <span 
-              className="text-xl text-white"
-              style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 500 }}
-            >
-              VitalPath
-            </span>
+            {/* Logo Frame - Mobile */}
+            <div className="flex sm:hidden items-center justify-center">
+              <img 
+                src={vitalPathLogo} 
+                alt="VitalPath" 
+                className="h-8 w-auto object-contain"
+              />
+            </div>
           </button>
 
           {/* Desktop Navigation */}

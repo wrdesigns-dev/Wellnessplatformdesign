@@ -1,4 +1,5 @@
 import { Heart } from 'lucide-react';
+import vitalPathLogo from 'figma:asset/755a8d1f2da0a645866fa4c774c9a911a6c15934.png';
 
 export function Footer() {
   return (
@@ -7,21 +8,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand Column */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#6B9B8E] to-[#4A7C6F] flex items-center justify-center">
-                <span 
-                  className="text-white font-semibold text-lg"
-                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
-                >
-                  V
-                </span>
-              </div>
-              <span 
-                className="text-xl text-white"
-                style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 500 }}
-              >
-                VitalPath
-              </span>
+            <div className="flex items-center mb-4">
+              <img 
+                src={vitalPathLogo} 
+                alt="VitalPath" 
+                className="h-10 w-auto object-contain"
+              />
             </div>
             <p 
               className="text-gray-500 text-sm"
